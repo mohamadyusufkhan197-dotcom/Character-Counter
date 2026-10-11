@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex justify-center items-center p-4">
+    <div class="bg-white p-6 rounded-xl shadow-lg w-full max-w-md">
+        <h1 class="text-2xl font-bold text-center mb-3">
+            Character Counter
+        </h1>
+        <p class="text-gray-500 mb-4">
+            Write your message (200 characters max).
+        </p>
+        <textarea id="message"
+            rows="5"
+            maxlength="200"
+            class="border p-3 w-full rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Type your message here..."></textarea>
+        <p id="counter" class="text-gray-600 mt-2">
+            0/200 characters
+        </p>
+        <p id="warning" class="text-red-500 mt-2"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
